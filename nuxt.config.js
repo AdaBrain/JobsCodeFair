@@ -23,6 +23,8 @@ module.exports = {
   ** Global CSS
   */
   css: [
+    // '@/assets/css/style.css',
+    '@/assets/sass/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -44,6 +46,11 @@ module.exports = {
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
+  ],
+  // 
+  router: [
+    { path: '/', component: import('page/index.vue') },
+    { path: '/register', component: import('page/Register/index.vue') }
   ],
   /*
   ** Axios module configuration

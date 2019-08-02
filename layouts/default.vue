@@ -1,8 +1,55 @@
 <template>
   <div>
+    <div id="header" :class="{ smaller: isActive }">
+      <div id="title" class="module">
+        <h1>
+          <a href="/">2019 JobsCodeFair</a>
+        </h1>
+      </div>
+      <div id="date" class="module">
+        <h1>
+          <a href="/">Aug. 31</a>
+        </h1>
+      </div>
+      <div id="date" class="module">
+        <h1>
+          <a href="/register">Register</a>
+        </h1>
+      </div>
+    </div>
     <nuxt />
+    <div id="footer">
+      <div id="footer_content">
+        <div id="footer_col_02" class="module">
+          <h2>CONTACT</h2>
+          <h3>Facebook: JobsCodeFair</h3>
+          <h3>Phone (088) 581-4781</h3>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      windowTop: 0,
+      isActive: false
+    }
+  },
+  mounted () {
+    window.addEventListener('scroll', () => {
+      this.windowTop = window.scrollY
+      if (window.scrollY > 5) {
+        this.isActive = true
+      } else {
+        this.isActive = false
+      }
+    })
+  }
+}
+</script>
 
 <style>
 html {
