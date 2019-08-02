@@ -49,8 +49,8 @@ module.exports = {
   ],
   // 
   router: [
-    { path: '/', component: import('page/index.vue') },
-    { path: '/register', component: import('page/Register/index.vue') }
+    { path: '/', component: import('pages/index.vue') },
+    { path: '/register', component: import('pages/Register/index.vue') }
   ],
   /*
   ** Axios module configuration

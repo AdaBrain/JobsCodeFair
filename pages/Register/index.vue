@@ -2,6 +2,14 @@
   <div id="container">
     <div id="content" class="form2019">
       <h1>Registation</h1>
+      <label for="gender">
+        Gender
+        <span class="pink">*</span>
+        <br />
+      </label>
+      <select v-model="selected_gender">
+        <option v-for="(gen, i) in genders" :key="i">{{ gen.text }}</option>
+      </select>
       <label for="first_name">
         First Name
         <span class="pink">*</span>
@@ -77,6 +85,65 @@
         autocomplete="on"
         required="required"
       />
+      <label for="education">
+        Education / Job Title
+        <span class="pink">*</span>
+        <br />
+      </label>
+      <input
+        type="text"
+        name="entries[0][phone]"
+        value
+        id="phone"
+        title="Phone"
+        maxlength="80"
+        autocomplete="on"
+        required="required"
+      />
+      <label for="education">
+        University / Company
+        <span class="pink">*</span>
+        <br />
+      </label>
+      <input
+        type="text"
+        name="entries[0][phone]"
+        value
+        id="phone"
+        title="Phone"
+        maxlength="80"
+        autocomplete="on"
+        required="required"
+      />
+      <label for="education">
+        Address
+        <span class="pink">*</span>
+        <br />
+      </label>
+      <input
+        type="text"
+        name="entries[0][phone]"
+        value
+        id="phone"
+        title="Phone"
+        maxlength="80"
+        autocomplete="on"
+        required="required"
+      />
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      selected_gender: 'Male',
+      genders: [
+        { text: 'Male', value: 'male' },
+        { text: 'Female', value: 'female' }
+      ]
+    }
+  }
+}
+</script>

@@ -3,11 +3,11 @@
     <div id="header" :class="{ smaller: isActive }">
       <div id="title" class="module">
         <h1>
-          <a href="/">2019 JobsCodeFair</a>
+          <a href="/">JobsCodeFair 2019</a>
         </h1>
       </div>
       <div id="date" class="module">
-        <h1>
+        <h1 class="text-center">
           <a href="/">Aug. 31</a>
         </h1>
       </div>
