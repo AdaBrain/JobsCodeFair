@@ -2,7 +2,7 @@
   <div id="container">
     <div id="neonsigns">
       <div class="module">
-        <img src="~/assets/images/JobsCode.png" alt class="image-background" />
+        <img src="~/assets/images/jcf.png" alt class="image-background" />
       </div>
     </div>
     <div id="speakers">
