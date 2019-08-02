@@ -2,11 +2,10 @@
   <div id="container">
     <div id="neonsigns">
       <div class="module">
-        <img src="~/assets/computer.jpg" alt class="image-background" />
+        <img src="~/assets/banner.jpg" alt class="image-background" />
       </div>
     </div>
     <div id="speakers">
-      <!-- <div id="home_intro"></div> -->
       <div class="module">
         <img src="~/assets/man.jpg" alt class="image-background" />
         <h1>P'Pup</h1>
