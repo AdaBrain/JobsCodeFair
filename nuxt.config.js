@@ -30,6 +30,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/firebase.config.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -49,8 +50,8 @@ module.exports = {
   ],
   // 
   router: [
-    { path: '/', component: import('pages/index.vue') },
-    { path: '/register', component: import('pages/Register/index.vue') }
+    { path: '/', component: 'pages/index.vue' },
+    { path: '/register', component: 'pages/Register/index.vue' }
   ],
   /*
   ** Axios module configuration
