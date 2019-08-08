@@ -1,3 +1,5 @@
+$color-dark-1: #29323c;
+$color-dark-2: #485563;
 $color-dark: #383536;
 $color-white: #fbfbfb;
 $color-orange: #ff914d;
@@ -12,6 +14,7 @@ $color-blue: #3bbbcd;
 body {
   font-family: "Anton Regular";
   background-color: $color-dark;
+  background: linear-gradient(to bottom right, $color-dark-1, $color-dark-2)
 }
 
 #container {
@@ -32,7 +35,8 @@ body {
   margin-left: auto;
   border-top: 4px solid $color-dark;
   border-bottom: 4px solid $color-dark;
-  background: $color-dark;
+  // background: $color-dark;
+  background: transparent;
   z-index: 3;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -90,12 +94,32 @@ body {
   }
 
   #speakers {
+    #home_intro {
+      float: left;
+      margin: 0 4px 4px 0;
+      padding: 40px 0 0;
+      width: calc(31.98241514416404% - 4px);
+      color: $color-white;
+
+      p {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      h1 {
+        font-style: normal;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+    }
+
     .module {
       display: inline-block;
       vertical-align: top;
       margin: 0 4px 4px 0;
       padding: 0;
-      width: calc(24.717418643% - 4px);
+      // width: calc(24.717418643% - 4px);
+      width: calc(16.719242902208202% - 4px);
 
       .image-background {
         width: 100%;
@@ -107,6 +131,18 @@ body {
         color: $color-white;
         font-size: 51.4px;
         line-height: 50px;
+      }
+
+      h2 {
+        color: $color-white;
+        width: 90%;
+        margin: 10px 0 0 -1px;
+        font-size: 17px;
+        line-height: 20px;
+        letter-spacing: 0.06em;
+        // font-weight: 600;
+        font-style: normal;
+        text-transform: uppercase;
       }
     }
   }
