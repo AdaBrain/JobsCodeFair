@@ -14,7 +14,7 @@ $color-blue: #3bbbcd;
 body {
   font-family: "Anton Regular";
   background-color: $color-dark;
-  background: linear-gradient(to bottom right, $color-dark-1, $color-dark-2)
+  background: linear-gradient(to bottom right, $color-dark-1, $color-dark-2);
 }
 
 #container {
@@ -137,12 +137,20 @@ body {
         color: $color-white;
         width: 90%;
         margin: 10px 0 0 -1px;
-        font-size: 17px;
-        line-height: 20px;
+        font-size: 22px;
+        line-height: 24px;
         letter-spacing: 0.06em;
         // font-weight: 600;
         font-style: normal;
         text-transform: uppercase;
+      }
+
+      h3,
+      #home_intro h3,
+      #footer h3 {
+        font-size: 17px;
+        line-height: 20px;
+        margin: 2px 0 0 0;
       }
     }
   }
