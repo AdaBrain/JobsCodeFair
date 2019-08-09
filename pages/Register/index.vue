@@ -130,11 +130,13 @@
         autocomplete="on"
         required="required"
       />
+      <button class="submit-register" @click="registation">Regis</button>
     </div>
   </div>
 </template>
 
 <script>
+// import firebase from '~/plugins/firebase.config.js'
 export default {
   data () {
     return {
@@ -143,6 +145,16 @@ export default {
         { text: 'Male', value: 'male' },
         { text: 'Female', value: 'female' }
       ]
+    }
+  },
+  methods: {
+    registation () {
+      const newGuid = 'JC-xxxx'.replace(/[xy]/g, (c) => {
+        const r = Math.floor(Math.random() * Math.floor(9))
+        return (c === 'x' ? r : r & 0x3).toString(10)
+      })
+      console.log(newGuid)
+      return newGuid
     }
   }
 }
