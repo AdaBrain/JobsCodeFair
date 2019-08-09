@@ -136,7 +136,9 @@
 </template>
 
 <script>
-// import firebase from '~/plugins/firebase.config.js'
+// import { dbStore } from '~/plugins/firebase.config.js'
+import { db } from '~/plugins/firebase.config.js'
+
 export default {
   data () {
     return {
@@ -154,7 +156,32 @@ export default {
         return (c === 'x' ? r : r & 0x3).toString(10)
       })
       console.log(newGuid)
-      return newGuid
+      // return newGuid
+      // dbStore
+      //   .collection('member')
+      //   .add({
+      //     id: newGuid,
+      //     gender: 'female',
+      //     first_name: 'SIRIMA',
+      //     last_name: 'INSON',
+      //     nick_name: 'EARNG EARN',
+      //     email: 'sirimainson@mail.com',
+      //     phone: '0888154751',
+      //     job_title: 'Programmer',
+      //     company: 'Ada Brain'
+      //   })
+      const database = db.ref('member').child(newGuid)
+      database.set({
+        id: newGuid,
+        gender: 'female',
+        first_name: 'SIRIMA',
+        last_name: 'INSON',
+        nick_name: 'EARNG EARN',
+        email: 'sirimainson@mail.com',
+        phone: '0888154751',
+        job_title: 'Programmer',
+        company: 'Ada Brain'
+      })
     }
   }
 }
