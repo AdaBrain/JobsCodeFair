@@ -24,7 +24,8 @@ module.exports = {
   */
   css: [
     // '@/assets/css/style.css',
-    '@/assets/sass/main.scss'
+    '@/assets/sass/main.scss',
+    '@/assets/sass/animation.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -48,7 +49,6 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
-  // 
   router: [
     { path: '/', component: 'pages/index.vue' },
     { path: '/register', component: 'pages/Register/index.vue' }

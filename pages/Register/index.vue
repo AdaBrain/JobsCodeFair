@@ -1,7 +1,7 @@
 <template>
   <div id="container">
-    <div id="content" class="form2019">
-      <h1>Registation</h1>
+    <div id="content" class="form2019" v-if="registration">
+      <h1>Registration</h1>
       <label for="gender">
         Gender
         <span class="pink">*</span>
@@ -17,13 +17,13 @@
       </label>
       <input
         type="text"
-        name="entries[0][first_name]"
         id="client"
         value
         title="First Name"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="first_name"
       />
       <label for="last_name">
         Last Name
@@ -32,13 +32,13 @@
       </label>
       <input
         type="text"
-        name="entries[0][last_name]"
         id="client"
         value
         title="Last Name"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="last_name"
       />
       <label for="nick_name">
         Nick Name
@@ -47,13 +47,13 @@
       </label>
       <input
         type="text"
-        name="entries[0][nick_name]"
         id="client"
         value
         title="Nick Name"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="nick_name"
       />
       <label for="email">
         E-mail Address
@@ -62,75 +62,73 @@
       </label>
       <input
         type="text"
-        name="entries[0][email]"
         value
         id="email"
         title="Email"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="email"
       />
       <label for="phone">
-        Phone
+        Mobile Number
         <span class="pink">*</span>
         <br />
       </label>
       <input
         type="text"
-        name="entries[0][phone]"
         value
         id="phone"
         title="Phone"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="phone"
       />
       <label for="education">
-        Education / Job Title
+        Education
         <span class="pink">*</span>
         <br />
       </label>
       <input
         type="text"
-        name="entries[0][phone]"
         value
         id="phone"
         title="Phone"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="education"
       />
       <label for="education">
-        University / Company
+        University
         <span class="pink">*</span>
         <br />
       </label>
       <input
         type="text"
-        name="entries[0][phone]"
         value
         id="phone"
         title="Phone"
         maxlength="80"
         autocomplete="on"
         required="required"
+        v-model="university"
       />
-      <label for="education">
-        Address
-        <span class="pink">*</span>
-        <br />
-      </label>
-      <input
-        type="text"
-        name="entries[0][phone]"
-        value
-        id="phone"
-        title="Phone"
-        maxlength="80"
-        autocomplete="on"
-        required="required"
-      />
-      <button class="submit-register" @click="registation">Regis</button>
+      <button class="submit-register" @click="registation">Submit</button>
+    </div>
+    <div id="content" class="form2019" v-if="regis_success">
+      <h1>Registration</h1>
+      <div class="regis-success">
+        <h2><strong>Applicant Number:</strong> {{ applicant_number }}</h2>
+        <h4><strong>Name:</strong> {{ first_name }} {{ last_name }}</h4>
+        <h4><strong>Nickname:</strong> {{ nick_name }}</h4>
+        <h4><strong>Eamil:</strong> {{ email }}</h4>
+        <h4><strong>Mobile number:</strong> {{ phone }}</h4>
+        <h4><strong>Education:</strong> {{ education }}</h4>
+        <h4><strong>University:</strong> {{ university }}</h4>
+        <button class="submit-register" @click="$router.push({path: '/'})">>OK</button>
+      </div>
     </div>
   </div>
 </template>
@@ -142,11 +140,21 @@ import { db } from '~/plugins/firebase.config.js'
 export default {
   data () {
     return {
+      applicant_number: '',
+      university: '',
+      email: '',
+      first_name: '',
+      last_name: '',
+      education: '',
+      nick_name: '',
+      phone: '',
       selected_gender: 'Male',
       genders: [
         { text: 'Male', value: 'male' },
         { text: 'Female', value: 'female' }
-      ]
+      ],
+      registration: true,
+      regis_success: false
     }
   },
   methods: {
@@ -155,7 +163,6 @@ export default {
         const r = Math.floor(Math.random() * Math.floor(9))
         return (c === 'x' ? r : r & 0x3).toString(10)
       })
-      console.log(newGuid)
       // return newGuid
       // dbStore
       //   .collection('member')
@@ -167,21 +174,25 @@ export default {
       //     nick_name: 'EARNG EARN',
       //     email: 'sirimainson@mail.com',
       //     phone: '0888154751',
-      //     job_title: 'Programmer',
-      //     company: 'Ada Brain'
+      //     education: 'Programmer',
+      //     university: 'Ada Brain'
       //   })
+      this.applicant_number = newGuid
       const database = db.ref('member').child(newGuid)
       database.set({
         id: newGuid,
-        gender: 'female',
-        first_name: 'SIRIMA',
-        last_name: 'INSON',
-        nick_name: 'EARNG EARN',
-        email: 'sirimainson@mail.com',
-        phone: '0888154751',
-        job_title: 'Programmer',
-        company: 'Ada Brain'
+        gender: this.selected_gender,
+        first_name: this.first_name,
+        last_name: this.last_name,
+        nick_name: this.nick_name,
+        email: this.email,
+        phone: this.phone,
+        education: this.education,
+        university: this.university
       })
+
+      this.registration = false
+      this.regis_success = true
     }
   }
 }

@@ -7,23 +7,17 @@
     </div>
     <div id="speakers">
       <h1 class="title">- SPEAKERS -</h1>
-      <!-- <div id="home_intro">
-        <h1>Speakers</h1>
-        <h3>10-year Anniversary</h3>
-        <h1>
-          <a
-            href="https://www.underconsideration.com/brandnewconference/register/conference-2019/"
-          >Register</a>
-        </h1>
-        <h2>ONLINE REGISTRATION CLOSES OCTOBER 10, 2019</h2>
-      </div> -->
-      <div class="module">
-        <img src="~/assets/images/p_pup.png" alt class="image-background" />
+      <div class="module text-right">
+        <a class="border-animation">
+          <div class="border-animation__inner">
+            <h1>P'Pup</h1>
+            <h2>Apaichon Punopas</h2>
+            <h3>CTO @ 2bsimple</h3>
+          </div>
+        </a>
       </div>
       <div class="module">
-        <h1>P'Pup</h1>
-        <h2>Apaichon Punopas</h2>
-        <h3>CTO @ 2bsimple</h3>
+        <img src="~/assets/images/p_pup.png" alt class="animate" />
       </div>
       <div class="module">
         <img src="~/assets/images/p_tik.png" alt class="image-background" />
@@ -33,14 +27,14 @@
         <h2>Jiraporn Changsamlee</h2>
         <h3>Service Delivery Manager</h3>
       </div>
-      <div class="module">
-        <img src="~/assets/images/p_pp.png" alt class="image-background" />
-      </div>
-      <div class="module">
+      <div class="module text-right">
         <h1>P'PP</h1>
         <h2>Pornpat Paethong</h2>
         <h3>Co-founder</h3>
         <h3>Software Engineer & Technical Lead</h3>
+      </div>
+      <div class="module">
+        <img src="~/assets/images/p_pp.png" alt class="image-background" />
       </div>
       <div class="module">
         <img src="~/assets/images/p_ada.png" alt class="image-background" />
@@ -60,9 +54,14 @@
             <img src="~/assets/images/toptier.png" alt />
           </a>
         </div>
-        <div class="sponsor" id="sponsor_mailchimp">
+        <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
             <img src="~/assets/images/triptery.png" alt />
+          </a>
+        </div>
+        <div id="sponsor_mailchimp" class="sponsor">
+          <a href="https://mailchimp.com/" target="_blank">
+            <img src="~/assets/images/vu.png" alt />
           </a>
         </div>
       </div>

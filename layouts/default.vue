@@ -7,12 +7,12 @@
         </h1>
       </div>
       <div id="date" class="module">
-        <h1 class="text-center">
+        <h1 class="text-right">
           <a href="/">Aug. 31</a>
         </h1>
       </div>
       <div id="date" class="module">
-        <h1>
+        <h1 class="text-right">
           <a href="/register">Register</a>
         </h1>
       </div>
@@ -46,6 +46,7 @@ export default {
       } else {
         this.isActive = false
       }
+      console.log(window.scrollY)
     })
   }
 }
