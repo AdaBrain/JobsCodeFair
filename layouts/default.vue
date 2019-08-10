@@ -22,8 +22,9 @@
       <div id="footer_content">
         <div id="footer_col_02" class="module">
           <h2>CONTACT</h2>
-          <h3>Facebook: JobsCodeFair</h3>
           <h3>Phone (088) 581-4781</h3>
+          <h3>Line:</h3>
+          <img src="~/assets/images/qr_code.jpg" alt="" class="qr-code">
         </div>
       </div>
     </div>
