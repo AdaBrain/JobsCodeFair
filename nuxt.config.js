@@ -48,10 +48,9 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
-  // 
   router: [
     { path: '/', component: 'pages/index.vue' },
-    { path: '/register', component: 'pages/Register/index.vue' }
+    { path: '/register', component: 'pages/register.vue' }
   ],
   /*
   ** Axios module configuration
