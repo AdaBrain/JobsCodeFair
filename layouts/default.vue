@@ -47,7 +47,6 @@ export default {
       } else {
         this.isActive = false
       }
-      console.log(window.scrollY)
     })
   }
 }

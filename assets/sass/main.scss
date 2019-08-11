@@ -16,18 +16,9 @@ $color-blue: #3bbbcd;
   src: url("../fonts/Audiowide-Regular.ttf");
 }
 
-$anime-time: 8s;
-$box-size: 200px;
-$clip-distance: 0.05;
-$clip-size: $box-size * (1 + $clip-distance * 2);
-$path-width: 2px;
-
-%full-fill {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+@font-face {
+  font-family: "HammersmithOne";
+  src: url("../fonts/HammersmithOne-Regular.ttf");
 }
 
 body {
@@ -91,6 +82,10 @@ body {
   color: $color-dark;
   border-top: 4px solid $color-white;
 
+  .module {
+    margin-top: 10px;
+  }
+
   h1 {
     font-size: 51.4px;
     line-height: 40px;
@@ -138,8 +133,165 @@ body {
       }
     }
   }
+  // https://media.giphy.com/media/l4FsmpXJlu0VSteLe/giphy.gif
+
+  #schedule {
+    // background-image: url('https://media.giphy.com/media/TF0SxQQN5tT7G/giphy.gif');
+    // background-image: url("https://media.giphy.com/media/1pmatQ3LcP5XFYxSWF/giphy.gif");
+    background-image: url("https://media.giphy.com/media/CIBrBZwSH5Ixa/giphy.gif");
+    // background-image: url('https://media.giphy.com/media/nnHM7sS2KSWvC/giphy.gif');
+    background-size: 100%;
+    background-position: center;
+    background-color: #fbfbfb54;
+    margin-top: 1em;
+    padding: 1em 2em;
+
+    .sec-title {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 27px;
+      text-align: center;
+      .underlay {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        h2 {
+          font-size: 50px;
+          color: $color-white;
+          text-align: center;
+          font-size: 50px;
+          line-height: 50px;
+          text-transform: none;
+          margin: 7px 0px;
+          span {
+            color: $color-orange;
+          }
+        }
+      }
+
+      h1 {
+        color: #f8f8f841;
+        font-size: 72px;
+        line-height: 70px;
+        text-transform: uppercase;
+      }
+    }
+
+    div.accordion-box {
+      display: block;
+      font-family: "HammersmithOne";
+      .accordion {
+        margin-bottom: 30px;
+        display: block;
+        position: relative;
+        .single-box {
+          border: 1px solid #efefef;
+          display: block;
+          position: relative;
+          background-color: #000000a6;
+          .single-box-title {
+            padding: 30px 20px 30px;
+            padding-left: 80px;
+            position: relative;
+            border: none;
+            .img-holder {
+              position: absolute;
+              top: 30px;
+              left: 20px;
+              img {
+                max-width: 8em;
+                height: auto;
+              }
+            }
+            .title-holder {
+              padding-left: 6rem;
+              min-height: 60px;
+              p {
+                margin: 0;
+                line-height: 22px;
+                font-size: 16px;
+                color: $color-orange;
+              }
+              h3 {
+                margin: 6px 0 0;
+                font-size: 25px;
+                color: $color-white;
+              }
+              ul,
+              li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+              }
+              li {
+                color: $color-white;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 30px;
+                span {
+                  color: $color-orange;
+                  // font-weight: 600;
+                }
+              }
+            }
+          }
+
+          .accord-btn {
+            cursor: pointer;
+            position: relative;
+            transition: all 500ms ease;
+            display: block;
+          }
+        }
+
+        .single-box:before {
+          position: absolute;
+          top: 35px;
+          width: 3px;
+          height: 50px;
+          content: "";
+          background: $color-orange;
+          left: 0px;
+          z-index: 1;
+        }
+      }
+    }
+  }
 
   #speakers {
+    margin-top: 1em;
+    .sec-title {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 27px;
+      text-align: center;
+      .underlay {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        h2 {
+          font-size: 50px;
+          color: $color-white;
+          text-align: center;
+          font-size: 50px;
+          line-height: 50px;
+          text-transform: none;
+          margin: 7px 0px;
+          span {
+            color: $color-orange;
+          }
+        }
+      }
+      h1 {
+        color: #f8f8f841;
+        font-size: 72px;
+        line-height: 70px;
+        text-transform: uppercase;
+      }
+    }
+
     #home_intro {
       float: left;
       margin: 0 4px 4px 0;
@@ -261,7 +413,7 @@ body {
     padding: 0;
     width: calc(33.438485804416404% - 4px);
     img {
-      width: calc(50% - 4px)
+      width: calc(50% - 4px);
     }
   }
 }
@@ -444,8 +596,22 @@ body {
   }
   #container {
     #speakers {
+      .sec-title {
+        .underlay {
+          h2 {
+            font-size: 40px;
+            line-height: 90px;
+            margin: 7px 0px;
+          }
+        }
+
+        h1 {
+          font-size: 62px;
+          line-height: 70px;
+        }
+      }
       div.module {
-        width: calc(48.717418643% - 4px);
+        width: calc(49.356698643% - 4px);
 
         h1 {
           font-size: 20px;
@@ -458,12 +624,65 @@ body {
         font-size: 25px;
       }
     }
+    #schedule {
+      margin-top: 1em;
+      padding: 1em 0.3em;
+      // h1 {
+      //   font-size: 30px;
+      // }
+
+      .sec-title {
+        .underlay {
+          h2 {
+            font-size: 40px;
+            line-height: 90px;
+            margin: 7px 0px;
+          }
+        }
+
+        h1 {
+          font-size: 62px;
+          line-height: 70px;
+        }
+      }
+
+      div.accordion-box {
+        .accordion {
+          .single-box {
+            .single-box-title {
+              padding: 1px;
+              padding-left: 0px;
+              .img-holder {
+                position: relative;
+                top: 0;
+                left: 0;
+                img {
+                  max-width: 8em;
+                  height: auto;
+                }
+              }
+              .title-holder {
+                padding-left: 0;
+                min-height: 60px;
+              }
+            }
+          }
+        }
+      }
+    }
     #sponsors_home {
       #presenting {
         h1 {
           font-size: 20px;
           line-height: 16px;
           margin: 1px 0 -5px -1px;
+        }
+
+        .sponsor {
+          width: 49%;
+          img {
+            width: 80%;
+          }
         }
       }
     }
