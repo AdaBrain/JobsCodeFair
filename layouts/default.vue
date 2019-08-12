@@ -7,12 +7,12 @@
         </h1>
       </div>
       <div id="date" class="module">
-        <h1 class="text-center">
+        <h1 class="text-right">
           <a href="/">Aug. 31</a>
         </h1>
       </div>
       <div id="date" class="module">
-        <h1>
+        <h1 class="text-right">
           <a href="/register">Register</a>
         </h1>
       </div>
@@ -22,8 +22,9 @@
       <div id="footer_content">
         <div id="footer_col_02" class="module">
           <h2>CONTACT</h2>
-          <h3>Facebook: JobsCodeFair</h3>
           <h3>Phone (088) 581-4781</h3>
+          <h3>Line:</h3>
+          <img src="~/assets/images/qr_code.jpg" alt="" class="qr-code">
         </div>
       </div>
     </div>

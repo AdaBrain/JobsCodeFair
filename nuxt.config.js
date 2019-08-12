@@ -12,7 +12,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/logo_Fax_icon.ico' }
     ]
   },
   /*
@@ -30,6 +30,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/firebase.config.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,10 +48,9 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
-  // 
   router: [
-    { path: '/', component: import('pages/index.vue') },
-    { path: '/register', component: import('pages/Register/index.vue') }
+    { path: '/', component: 'pages/index.vue' },
+    { path: '/register', component: 'pages/register.vue' }
   ],
   /*
   ** Axios module configuration
