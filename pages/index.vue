@@ -137,13 +137,14 @@
             <div class="single-box-title accord-btn">
               <div class="img-holder">
                 <img src="~/assets/images/p_ada.png" alt="Awesome Image">
+                <img src="~/assets/images/p_pp.png" alt="Awesome Image">
               </div>
               <div class="title-holder">
                 <p><i class="fa fa-clock-o" aria-hidden="true"></i>11:00 - 12:00 PM</p>
                 <h3>CodeLab: How to create a modern website in an hour</h3>
                 <ul class="meta-info">
-                  <li><span>Speaker:</span> P'Ada</li>
-                  <li>AdaBrain Co-Founder</li>
+                  <li><span>Speaker:</span> P'Ada & P'PP</li>
+                  <li>AdaBrain Co-Founder, Triptery Co., Ltd.</li>
                 </ul>
               </div>
             </div>

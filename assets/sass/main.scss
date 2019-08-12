@@ -191,25 +191,24 @@ body {
           position: relative;
           background-color: #000000a6;
           .single-box-title {
-            padding: 30px 20px 30px;
-            padding-left: 80px;
+            padding: 15px;
             position: relative;
             border: none;
             .img-holder {
-              position: absolute;
-              top: 30px;
-              left: 20px;
+              // position: absolute;
+              display: inline;
               img {
-                max-width: 8em;
+                max-width: 12em;
                 height: auto;
               }
             }
             .title-holder {
-              padding-left: 6rem;
-              min-height: 60px;
+              display: inline-block;
+              padding-left: 1rem;
+              // min-height: 60px;
               p {
                 margin: 0;
-                line-height: 22px;
+                // line-height: 22px;
                 font-size: 16px;
                 color: $color-orange;
               }
@@ -324,16 +323,12 @@ body {
       padding: 0;
       width: calc(24.717418643% - 4px);
       color: $color-white;
-      // width: calc(16.719242902208202% - 4px);
-      // width: calc(33.69990480545485% - 4px);
-
       img {
         width: 100%;
         box-shadow: inset 0 0 0 1px rgba($color-orange, 0.5);
       }
 
       h1 {
-        // width: 90%;
         margin: 6px 0 -6px -2px;
         color: $color-white;
         font-size: 51.4px;
@@ -342,18 +337,15 @@ body {
 
       h2 {
         color: $color-white;
-        // width: 90%;
         margin: 10px 0 0 -1px;
         font-size: 22px;
         line-height: 24px;
         letter-spacing: 0.06em;
-        // font-weight: 600;
         font-style: normal;
         text-transform: uppercase;
       }
 
       h3 {
-        // width: 90%;
         font-size: 17px;
         line-height: 20px;
         margin: 2px 0 0 0;
@@ -366,20 +358,21 @@ body {
     width: 100%;
 
     #presenting {
-      margin-right: 4px;
+      padding: 1em;
+      // margin-right: 4px;
       // width: calc(50.157728706624606% - 4px);
-      display: block;
-      float: left;
-      padding-bottom: 50em;
-      margin-bottom: -50em;
-      margin-top: 40px;
+      // display: block;
+      // float: left;
+      // padding-bottom: 50em;
+      // margin-bottom: -50em;
+      // margin-top: 40px;
       background: $color-white;
 
       h1 {
         font-size: 51.4px;
-        line-height: 40px;
+        // line-height: 40px;
         color: $color-dark;
-        margin: 20px 40px 40px 20px;
+        // margin: 20px 40px 40px 20px;
       }
 
       .sponsor {
@@ -674,10 +667,7 @@ body {
       #presenting {
         h1 {
           font-size: 20px;
-          line-height: 16px;
-          margin: 1px 0 -5px -1px;
         }
-
         .sponsor {
           width: 49%;
           img {
@@ -732,23 +722,6 @@ body {
         margin: 0 4px 4px 0;
         padding: 0;
         width: calc(23.967996733949883% - 4px);
-      }
-    }
-
-    #sponsors_home {
-      #presenting {
-        display: block;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        margin-top: 4px;
-        margin-right: 0;
-        width: 100%;
-        padding: 0;
-        h1 {
-          font-size: 20px;
-          line-height: 16px;
-          margin: 10px 0 10px 10px;
-        }
       }
     }
   }
