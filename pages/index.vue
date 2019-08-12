@@ -1,24 +1,11 @@
 <template>
   <div id="container">
     <div id="neonsigns">
-      <!-- <div class="module">
-        <div>
-          <h1 class="jobs">Jobs</h1>
-          <h1 class="text-right">VONGCHAVALITKUL UNIVERSITY</h1>
-          <h1 class="code text-center">&lt;/ CODE></h1>
-          <h1 class="fair text-right">Fair 2019</h1>
-        </div>
-        <img src="~/assets/images/hacker.jpg" alt class="image-background" />
-      </div> -->
-      <!-- <img src="https://media.giphy.com/media/xT8qAWN5Hmls68ICHu/giphy.gif" alt=""> -->
       <div class="module">
         <img src="~/assets/images/jcf.png" alt class="image-background">
       </div>
     </div>
     <div id="speakers">
-      <!-- <h1 class="title">
-        <span>SPEAKERS</span>
-      </h1> -->
       <div class="sec-title">
         <div class="underlay">
           <h2>Event <span>Speakers</span></h2>
@@ -64,7 +51,6 @@
         <h3>@AdaBrain</h3>
       </div>
     </div>
-    <!-- <img src="https://media.giphy.com/media/8JNhmGOn981a77Jl0u/giphy.gif" alt=""> -->
     <div id="schedule">
       <div class="sec-title">
         <div class="underlay">
@@ -72,7 +58,6 @@
         </div>
         <h1>Event Schedule</h1>
       </div>
-      <!-- <h1>Event <span>Schedule</span></h1> -->
       <div class="accordion-box">
         <!--Start single accordion box-->
         <div class="accordion accordion-block color-2">
