@@ -1,14 +1,33 @@
 <template>
   <div id="container">
-    <div id="neonsigns">
+    <div id="coverposter">
+      <div class="module">
+        <!-- <div class="imagecover">
+          <img src="~/assets/images/hacker.jpg" alt="">
+        </div>-->
+        <p>VONGCHAVALITKUL UNIVERSITY</p>
+        <h2>Jobs</h2>
+        <h1>&lt;/ Code></h1>
+        <h3>Fair 2019</h3>
+        <div class="locate">
+          <p>HIGH RATE JOBS AND CODING</p>
+          <p>31.08.2019 | 8AM</p>
+          <p>@University Meeting Hall</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div id="neonsigns">
       <div class="module">
         <img src="~/assets/images/jcf.png" alt class="image-background">
       </div>
-    </div>
+    </div>-->
     <div id="speakers">
       <div class="sec-title">
         <div class="underlay">
-          <h2>Event <span>Speakers</span></h2>
+          <h2>
+            Event
+            <span>Speakers</span>
+          </h2>
         </div>
         <h1>Event Speakers</h1>
       </div>
@@ -19,10 +38,10 @@
         <h3>@2bsimple</h3>
       </div>
       <div class="module">
-        <img src="~/assets/images/p_pup.png" alt class="animate">
+        <img src="~/assets/images/p_pup.png" alt class="animate" />
       </div>
       <div class="module">
-        <img src="~/assets/images/p_tik.png" alt class="image-background">
+        <img src="~/assets/images/p_tik.png" alt class="image-background" />
       </div>
       <div class="module">
         <h1>P'Tick</h1>
@@ -38,10 +57,10 @@
         <h3>@Triptery Co., Ltd.</h3>
       </div>
       <div class="module">
-        <img src="~/assets/images/p_pp.png" alt class="image-background">
+        <img src="~/assets/images/p_pp.png" alt class="image-background" />
       </div>
       <div class="module">
-        <img src="~/assets/images/p_ada.png" alt class="image-background">
+        <img src="~/assets/images/p_ada.png" alt class="image-background" />
         <!-- <h3></h3> -->
       </div>
       <div class="module">
@@ -54,7 +73,10 @@
     <div id="schedule">
       <div class="sec-title">
         <div class="underlay">
-          <h2>Event <span>Schedule</span></h2>
+          <h2>
+            Event
+            <span>Schedule</span>
+          </h2>
         </div>
         <h1>Event Schedule</h1>
       </div>
@@ -64,14 +86,18 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_ada.png" alt="Awesome Image">
+                <img src="~/assets/images/p_ada.png" alt="Awesome Image" />
               </div>
               <div class="title-holder">
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 10:00 AM</p>
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 10:00 AM
+                </p>
                 <h3>How to get a Great Jobs</h3>
                 <ul class="meta-info">
-                  <li><span>Speaker:</span> P'Ada</li>
-                  <li>AdaBrain Co-Founder</li>
+                  <li>
+                    <span>Speaker:</span> P'Ada
+                  </li>
+                  <li>Co-founder, AdaBrain</li>
                 </ul>
               </div>
             </div>
@@ -83,13 +109,17 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_pup.png" alt="Awesome Image">
+                <img src="~/assets/images/p_pup.png" alt="Awesome Image" />
               </div>
               <div class="title-holder">
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i>10:00 - 10:30 AM</p>
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>10:00 - 10:30 AM
+                </p>
                 <h3>Now and Next Tech</h3>
                 <ul class="meta-info">
-                  <li><span>Speaker:</span> P'Pup</li>
+                  <li>
+                    <span>Speaker:</span> P'Pup
+                  </li>
                   <li>อดีตนายกสมาคมโปรแกรมเมอร์แห่งประเทศไทย</li>
                 </ul>
               </div>
@@ -102,13 +132,17 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_tik.png" alt="Awesome Image">
+                <img src="~/assets/images/p_tik.png" alt="Awesome Image" />
               </div>
               <div class="title-holder">
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i>10:30 - 11:00 AM</p>
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>10:30 - 11:00 AM
+                </p>
                 <h3>สมัครงานอย่างไรให้ได้ผลตอบแทนตามที่คาดหวัง</h3>
                 <ul class="meta-info">
-                  <li><span>Speaker:</span> P'Tick</li>
+                  <li>
+                    <span>Speaker:</span> P'Tick
+                  </li>
                   <li>บริษัท Top Tier จำกัด</li>
                 </ul>
               </div>
@@ -121,15 +155,19 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_ada.png" alt="Awesome Image">
-                <img src="~/assets/images/p_pp.png" alt="Awesome Image">
+                <img src="~/assets/images/p_ada.png" alt="Awesome Image" />
+                <img src="~/assets/images/p_pp.png" alt="Awesome Image" />
               </div>
               <div class="title-holder">
-                <p><i class="fa fa-clock-o" aria-hidden="true"></i>11:00 - 12:00 PM</p>
+                <p>
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>11:00 - 12:00 PM
+                </p>
                 <h3>CodeLab: How to create a modern website in an hour</h3>
                 <ul class="meta-info">
-                  <li><span>Speaker:</span> P'Ada & P'PP</li>
-                  <li>AdaBrain Co-Founder, Triptery Co., Ltd.</li>
+                  <li>
+                    <span>Speaker:</span> P'Ada & P'PP
+                  </li>
+                  <li>Co-founder, AdaBrain & Co-founder, Triptery Co., Ltd.</li>
                 </ul>
               </div>
             </div>
@@ -143,25 +181,43 @@
         <h1>Presenting Sponsors</h1>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/vu.png" alt>
+            <img src="~/assets/images/vu.png" alt />
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/2bsimple.png" alt>
+            <img src="~/assets/images/2bsimple.png" alt />
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/toptier.png" alt>
+            <img src="~/assets/images/toptier.png" alt />
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/triptery.png" alt>
+            <img src="~/assets/images/triptery.png" alt />
           </a>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import ogImage from '~/assets/images/jcf.png'
+
+export default {
+  head () {
+    return {
+      meta: [
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.BASE_URL + ogImage
+        }
+      ]
+    }
+  }
+}
+</script>

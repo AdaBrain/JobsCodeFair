@@ -21,6 +21,11 @@ $color-blue: #3bbbcd;
   src: url("../fonts/HammersmithOne-Regular.ttf");
 }
 
+@font-face {
+  font-family: "One Day";
+  src: url("../fonts/ONEDAY.ttf");
+}
+
 body {
   font-family: "Anton Regular";
   background-color: #000000;
@@ -96,6 +101,121 @@ body {
 }
 
 #container {
+  #coverposter {
+    padding: 65px 0 0 0;
+    .module {
+      padding: 65px;
+      background-image: url("https://media.giphy.com/media/CIBrBZwSH5Ixa/giphy.gif");
+      background-size: 100%;
+      background-position: center;
+      background-color: #fbfbfb54;
+      font-family: "Audiowide";
+
+      .imagecover {
+        // margin: 65px;
+        position: absolute;
+        z-index: 0;
+        opacity: 0;
+        top: 65px;
+        left: 0;
+        font-size: 2.1rem;
+        animation: fadeIn ease 5s forwards;
+        -webkit-animation: fadeIn ease 5s forwards;
+        -moz-animation: fadeIn ease 5s forwards;
+        -o-animation: fadeIn ease 5s forwards;
+        -ms-animation: fadeIn ease 5s forwards;
+        -webkit-animation-delay: 8s;
+        animation-delay: 8s;
+        img {
+          width: 100%;
+        }
+      }
+      p {
+        color: $color-white;
+        font-family: "One Day";
+        position: absolute;
+        top: 6em;
+        // right: 0;
+        opacity: 0;
+        left: 40rem;
+        font-size: 2.1rem;
+        animation: fadeIn ease 5s forwards;
+        -webkit-animation: fadeIn ease 5s forwards;
+        -moz-animation: fadeIn ease 5s forwards;
+        -o-animation: fadeIn ease 5s forwards;
+        -ms-animation: fadeIn ease 5s forwards;
+        -webkit-animation-delay: 6s;
+        animation-delay: 6s;
+      }
+      .locate {
+        p {
+          position: relative;
+          top: 0;
+          left: 0;
+          text-align: right;
+          font-size: 1.5rem;
+          line-height: 30px;
+          white-space: nowrap;
+          overflow: hidden;
+          opacity: 0;
+          -webkit-animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+          animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+          -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+        }
+      }
+      h2 {
+        display: inline-block;
+        color: $color-white;
+        line-height: 100px;
+        letter-spacing: 0.15em; /* Adjust as needed */
+        border-right: 0.02em solid $color-orange;
+        font-size: 7em;
+        white-space: nowrap;
+        overflow: hidden;
+        -webkit-animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+        animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        // animation-iteration-count: infinite;
+      }
+      h1 {
+        color: $color-orange;
+        font-size: 10em;
+        font-weight: bold;
+        text-align: center;
+        line-height: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+        animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        // animation-iteration-count: infinite;
+      }
+      h3 {
+        color: $color-blue;
+        font-size: 7em;
+        text-align: right;
+        line-height: 100px;
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0;
+        -webkit-animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+        animation: type2 2s steps(30, end), blink-caret 0.5s step-end infinite;
+        -webkit-animation-delay: 4s;
+        animation-delay: 4s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        // animation-iteration-count: infinite;
+      }
+    }
+  }
   #neonsigns {
     padding: 65px 0 0 0;
     .module {
@@ -519,34 +639,161 @@ body {
   }
 }
 
-// keyframes
-@keyframes showup {
+/* The typing effect */
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
 
-@keyframes reveal {
+@-moz-keyframes fadeIn {
   0% {
-    margin-left: -2000px;
-  }
-  20% {
-    margin-left: -2000px;
-  }
-  35% {
-    margin-left: 0px;
+    opacity: 0;
   }
   100% {
-    margin-left: 0px;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border: none;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $color-orange;
+  }
+}
+
+//
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid $color-orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border: none;
+  }
+  1%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
   }
 }
 
@@ -565,6 +812,37 @@ body {
     }
   }
   #container {
+    #coverposter {
+      padding: 65px 0 0 0;
+      .module {
+        padding: 20px 1px 0 1px;
+        p {
+          top: 8em;
+          opacity: 0;
+          left: 9rem;
+          font-size: 1rem;
+        }
+        .locate {
+          p {
+            font-size: 1rem;
+            line-height: 20px;
+          }
+        }
+        h2 {
+          line-height: 35px;
+          font-size: 3em;
+        }
+        h1 {
+          font-size: 4em;
+          font-weight: inherit;
+          line-height: 90px;
+        }
+        h3 {
+          font-size: 3em;
+          line-height: 35px;
+        }
+      }
+    }
     #speakers {
       .sec-title {
         .underlay {
@@ -766,6 +1044,37 @@ body {
   }
 
   #container {
+    #coverposter {
+      padding: 65px 0 0 0;
+      .module {
+        padding: 65px 1px 0 1px;
+        p {
+          top: 7.5em;
+          opacity: 0;
+          left: 25rem;
+          font-size: 1.5rem;
+        }
+        .locate {
+          p {
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+        }
+        h2 {
+          line-height: 50px;
+          font-size: 4.5em;
+        }
+        h1 {
+          font-size: 7em;
+          font-weight: inherit;
+          line-height: 120px;
+        }
+        h3 {
+          font-size: 4.5em;
+          line-height: 50px;
+        }
+      }
+    }
     #neonsigns {
       padding: 100px 0 0 0;
     }
@@ -817,6 +1126,37 @@ body {
   }
 
   #container {
+    #coverposter {
+      padding: 65px 0 0 0;
+      .module {
+        padding: 65px 1px 0 1px;
+        p {
+          top: 7.5em;
+          opacity: 0;
+          left: 38rem;
+          font-size: 1.7rem;
+        }
+        .locate {
+          p {
+            font-size: 1.5rem;
+            line-height: 30px;
+          }
+        }
+        h2 {
+          line-height: 90px;
+          font-size: 6em;
+        }
+        h1 {
+          font-size: 9em;
+          font-weight: inherit;
+          line-height: 130px;
+        }
+        h3 {
+          font-size: 6em;
+          line-height: 90px;
+        }
+      }
+    }
     #speakers {
       .module {
         width: calc(24.27996733949883% - 4px);

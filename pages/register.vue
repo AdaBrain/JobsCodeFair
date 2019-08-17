@@ -140,7 +140,10 @@
           <p><strong>University:</strong> {{ university }}</p>
         </div>
       </div>
-      <b-button class="mt-3" variant="success" block href="http://line.me/ti/g/A5rFnLRXnF">
+      <!-- <b-button class="mt-3" variant="success" block href="http://line.me/ti/g/A5rFnLRXnF">
+        Join Group
+      </b-button> -->
+      <b-button class="mt-3" variant="success" block @click="$bvModal.hide('my-modal')">
         Join Group
       </b-button>
     </b-modal>
