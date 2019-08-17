@@ -216,6 +216,51 @@ body {
       }
     }
   }
+  #poster,
+  #schedule,
+  #speakers {
+    .sec-title {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 27px;
+      text-align: center;
+      .underlay {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        h2 {
+          font-size: 50px;
+          color: $color-white;
+          text-align: center;
+          font-size: 50px;
+          line-height: 50px;
+          text-transform: none;
+          margin: 7px 0px;
+          span {
+            color: $color-orange;
+          }
+        }
+      }
+
+      h1 {
+        color: #f8f8f841;
+        font-size: 72px;
+        line-height: 70px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  #poster {
+    margin: 2rem 0; 
+    .module {
+      display: flex;
+      justify-content: space-around;
+      img {
+        width: 25%;
+      }
+    }
+  }
   #neonsigns {
     padding: 65px 0 0 0;
     .module {
@@ -256,38 +301,6 @@ body {
     background-color: #fbfbfb54;
     margin-top: 1em;
     padding: 1em 2em;
-    .sec-title {
-      display: block;
-      overflow: hidden;
-      position: relative;
-      padding-bottom: 27px;
-      text-align: center;
-      .underlay {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        h2 {
-          font-size: 50px;
-          color: $color-white;
-          text-align: center;
-          font-size: 50px;
-          line-height: 50px;
-          text-transform: none;
-          margin: 7px 0px;
-          span {
-            color: $color-orange;
-          }
-        }
-      }
-
-      h1 {
-        color: #f8f8f841;
-        font-size: 72px;
-        line-height: 70px;
-        text-transform: uppercase;
-      }
-    }
-
     div.accordion-box {
       display: block;
       font-family: "HammersmithOne";
@@ -366,37 +379,6 @@ body {
 
   #speakers {
     margin-top: 1em;
-    .sec-title {
-      display: block;
-      overflow: hidden;
-      position: relative;
-      padding-bottom: 27px;
-      text-align: center;
-      .underlay {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        h2 {
-          font-size: 50px;
-          color: $color-white;
-          text-align: center;
-          font-size: 50px;
-          line-height: 50px;
-          text-transform: none;
-          margin: 7px 0px;
-          span {
-            color: $color-orange;
-          }
-        }
-      }
-      h1 {
-        color: #f8f8f841;
-        font-size: 72px;
-        line-height: 70px;
-        text-transform: uppercase;
-      }
-    }
-
     #home_intro {
       float: left;
       margin: 0 4px 4px 0;

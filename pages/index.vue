@@ -21,6 +21,23 @@
         <img src="~/assets/images/jcf.png" alt class="image-background">
       </div>
     </div>-->
+    <div id="poster">
+      <!-- <h2>JOIN THE EVENT</h2> -->
+      <div class="sec-title">
+        <div class="underlay">
+          <h2>
+            JOIN
+            <span>THE EVENT</span>
+          </h2>
+        </div>
+        <h1>JOIN THE EVENT</h1>
+      </div>
+      <div class="module">
+        <img src="~/assets/images/1.png" alt="">
+        <img src="~/assets/images/2.png" alt="">
+        <img src="~/assets/images/3.png" alt="">
+      </div>
+    </div>
     <div id="speakers">
       <div class="sec-title">
         <div class="underlay">
