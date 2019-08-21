@@ -55,10 +55,10 @@
         <h3>@2bsimple</h3>
       </div>
       <div class="module">
-        <img src="~/assets/images/p_pup.png" alt class="animate" />
+        <img src="~/assets/images/p_pup.png" alt class="animate">
       </div>
       <div class="module">
-        <img src="~/assets/images/p_tik.png" alt class="image-background" />
+        <img src="~/assets/images/p_tik.png" alt class="image-background">
       </div>
       <div class="module">
         <h1>P'Tick</h1>
@@ -74,10 +74,10 @@
         <h3>@Triptery Co., Ltd.</h3>
       </div>
       <div class="module">
-        <img src="~/assets/images/p_pp.png" alt class="image-background" />
+        <img src="~/assets/images/p_pp.png" alt class="image-background">
       </div>
       <div class="module">
-        <img src="~/assets/images/p_ada.png" alt class="image-background" />
+        <img src="~/assets/images/p_ada.png" alt class="image-background">
         <!-- <h3></h3> -->
       </div>
       <div class="module">
@@ -103,7 +103,7 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_ada.png" alt="Awesome Image" />
+                <img src="~/assets/images/p_ada.png" alt="Awesome Image">
               </div>
               <div class="title-holder">
                 <p>
@@ -126,7 +126,7 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_pup.png" alt="Awesome Image" />
+                <img src="~/assets/images/p_pup.png" alt="Awesome Image">
               </div>
               <div class="title-holder">
                 <p>
@@ -149,7 +149,7 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_tik.png" alt="Awesome Image" />
+                <img src="~/assets/images/p_tik.png" alt="Awesome Image">
               </div>
               <div class="title-holder">
                 <p>
@@ -172,8 +172,8 @@
           <div class="single-box">
             <div class="single-box-title accord-btn">
               <div class="img-holder">
-                <img src="~/assets/images/p_ada.png" alt="Awesome Image" />
-                <img src="~/assets/images/p_pp.png" alt="Awesome Image" />
+                <img src="~/assets/images/p_ada.png" alt="Awesome Image">
+                <img src="~/assets/images/p_pp.png" alt="Awesome Image">
               </div>
               <div class="title-holder">
                 <p>
@@ -198,22 +198,22 @@
         <h1>Presenting Sponsors</h1>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/vu.png" alt />
+            <img src="~/assets/images/vu.png" alt>
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/2bsimple.png" alt />
+            <img src="~/assets/images/2bsimple.png" alt>
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/toptier.png" alt />
+            <img src="~/assets/images/toptier.png" alt>
           </a>
         </div>
         <div id="sponsor_mailchimp" class="sponsor">
           <a href="https://mailchimp.com/" target="_blank">
-            <img src="~/assets/images/triptery.png" alt />
+            <img src="~/assets/images/triptery.png" alt>
           </a>
         </div>
       </div>

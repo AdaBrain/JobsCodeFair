@@ -794,6 +794,14 @@ body {
     }
   }
   #container {
+    #poster {
+      .module {
+        display: inline;
+        img {
+          width: 100%;
+        }
+      }
+    }
     #coverposter {
       padding: 65px 0 0 0;
       .module {
@@ -909,6 +917,8 @@ body {
       }
     }
   }
+
+  
   #footer {
     h1 {
       font-size: 20px;
@@ -993,6 +1003,10 @@ body {
     }
     .snip1535 {
       margin: 15px auto;
+    }
+
+    a.link-group {
+      display: none;
     }
   }
 

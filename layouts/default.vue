@@ -24,7 +24,7 @@
           <h2>CONTACT</h2>
           <h3>Phone (088) 581-4781</h3>
           <h3>Line:</h3>
-          <img src="~/assets/images/qr_code.jpg" alt="" class="qr-code">
+          <img src="~/assets/images/contact.png" alt="" class="qr-code">
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
       // { hid: 'og:image', property: 'og:image', content: this.BASE_URL+ ogImage }
     ],
     link: [
@@ -49,10 +49,12 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios'
   ],
-  router: [
-    { path: '/', component: 'pages/index.vue' },
-    { path: '/register', component: 'pages/register.vue' }
-  ],
+  router: {
+    routes: [
+      { path: '/', component: 'pages/index.vue' },
+      { path: '/register', component: 'pages/register.vue' }
+    ]
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options

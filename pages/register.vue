@@ -140,12 +140,22 @@
           <p><strong>University:</strong> {{ university }}</p>
         </div>
       </div>
-      <!-- <b-button class="mt-3" variant="success" block href="http://line.me/ti/g/A5rFnLRXnF">
+      <!-- <b-button class="mt-3 link-group" variant="success" block href="http://line.me/ti/g/A5rFnLRXnF">
         Join Group
       </b-button> -->
-      <b-button class="mt-3" variant="success" block @click="$bvModal.hide('my-modal')">
+      <br>
+      <p class="group-line">Scan Me:</p>
+      <img src="~/assets/images/qr_code.jpg" alt="" class="group-line">
+      <b-button class="mt-3 group-line" variant="success" block href="https://jcf2019.adabrain.com/">
+        OK
+      </b-button>
+
+      <b-button class="mt-3 link-qr" variant="success" block href="http://line.me/ti/g/A5rFnLRXnF">
         Join Group
       </b-button>
+      <!-- <b-button class="mt-3" variant="success" block @click="$bvModal.hide('my-modal')">
+        Join Group
+      </b-button> -->
     </b-modal>
   </div>
 </template>
@@ -238,3 +248,21 @@ export default {
   }
 }
 </script>
+
+<style>
+  img.group-line {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 760px) {
+    img.group-line, a.group-line {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    a.link-qr {
+      display: none;
+    }
+  }
+</style>
